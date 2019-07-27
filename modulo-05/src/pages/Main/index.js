@@ -7,6 +7,7 @@ import { Container } from '../../components/Container';
 import { Form, SubmitButton, List } from './styles';
 
 import api from '../../services/api';
+import DataItem from '../../components/DataItem/DataItem';
 
 export default class Main extends Component {
   state = {
@@ -80,6 +81,19 @@ export default class Main extends Component {
             )}
           </SubmitButton>
         </Form>
+
+        <List>
+          <li>
+            <DataItem label="teste">
+              <p> texto describe</p>
+            </DataItem>
+          </li>
+          <li>
+            <DataItem label="teste2">
+              <span> texto describe</span>
+            </DataItem>
+          </li>
+        </List>
 
         <List>
           {repositories.map(repo => (
