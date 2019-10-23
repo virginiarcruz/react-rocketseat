@@ -4,16 +4,22 @@ export const Form = styled.form`
   margin-top: 30px;
   display: flex;
   flex-direction: row;
-
-  input {
-    flex: 1;
-    border: 1px solid #eee;
-    padding: 10px 15px;
-    border-radius: 4px;
-    font-size: 16px;
-  }
 `;
 
+export const ErrorTxt = styled.small`
+  display: block;
+  color: #ff0000;
+`;
+
+export const Input = styled.input.attrs(props => ({
+  borderRed: props.error,
+}))`
+  flex: 1;
+  border: 1px solid ${props => (props.error ? '#ff0000' : '#eee')};
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+`;
 const rotate = keyframes`
   from {
     transform: rotate(0deg);
