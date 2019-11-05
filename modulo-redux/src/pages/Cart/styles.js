@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: 30px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 4px;
 
   footer {
@@ -15,7 +15,7 @@ export const Container = styled.div`
       background: #7159c1;
       padding: 6px 12px;
       border-radius: 4px;
-      color: #fff;
+      color: #ffff;
       border: 0;
       font-weight: bold;
       text-transform: uppercase;
