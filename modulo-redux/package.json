@@ -4,7 +4,7 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "eslint --fix"
+      "pre-commit": "echo 'tesssteee'"
     }
   },
   "dependencies": {
