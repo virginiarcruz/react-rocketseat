@@ -19,7 +19,7 @@ class Home extends Component {
     const response = await api.get('products');
 
     const data = response.data.map(product => ({
-      ...product,
+      ...product, // copia todos os dados de producst
       priceFormated: formatPrice(product.price),
     }));
     this.setState({ products: data });

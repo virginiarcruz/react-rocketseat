@@ -69,6 +69,7 @@ export default class Main extends Component {
 
   render() {
     const { newRepo, repositories, loading, error } = this.state;
+    console.log('teste');
 
     return (
       <Container>
