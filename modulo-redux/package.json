@@ -2,18 +2,6 @@
   "name": "react-modulo05",
   "version": "0.1.0",
   "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "teste ok"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "cross-env CI=true yarn test --bail --findRelatedTests",
-      "git add"
-    ]
-  },
   "dependencies": {
     "axios": "^0.19.0",
     "cross-env": "^6.0.3",

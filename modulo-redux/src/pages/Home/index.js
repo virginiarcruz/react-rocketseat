@@ -26,9 +26,10 @@ export default function Home() {
       const response = await api.get('products');
 
       const data = response.data.map(product => ({
-        ...product, // copia todos os dados de producst
+        ...product,
         priceFormated: formatPrice(product.price),
       }));
+      console.log('dataa', data);
       setProducts(data);
     }
 
