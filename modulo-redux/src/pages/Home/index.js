@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { MdAddShoppingCart } from 'react-icons/md';
 
 import api from '../../services/api';
@@ -29,7 +28,6 @@ export default function Home() {
         ...product,
         priceFormated: formatPrice(product.price),
       }));
-      console.log('dataa', data);
       setProducts(data);
     }
 
