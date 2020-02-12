@@ -1,24 +1,16 @@
 import styled from 'styled-components';
+// import { darken } from 'polished';
 
-export const Wrapper = styled.div`
-  height: 100vh;
-  background: linear-gradient(-90deg, #715c91, #ab59c1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Content = styled.div`
-  width: 100%;
-  max-width: 315px;
-  text-align: center;
+export const Container = styled.div`
+  max-width: 600px;
+  margin: 50px auto;
 
   form {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
 
-    > input {
+    input {
       background: rgba(0, 0, 0, 0.1);
       border: 0;
       border-radius: 4px;
@@ -32,12 +24,11 @@ export const Content = styled.div`
       }
     }
 
-    span {
-      color: #fb6f91;
-      align-self: flex-start;
-      margin: 0 0 10px;
-      font-weight: bold;
-      font-size: 16px;
+    hr {
+      border: 0;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 10px 0 20px;
     }
 
     button {
@@ -52,19 +43,25 @@ export const Content = styled.div`
       transition: background 0.2s;
 
       &:hover {
-        background-color: darken("#3b9eff",10);
+        background: blue;
       }
     }
+  }
 
-    a {
-      color: #fff;
-      margin-top: 15px;
-      font-size: 16px;
-      opacity: 0.8;
+  > button {
+    width: 100%;
+    margin: 10px 0 0;
+    height: 44px;
+    background: #f64c75;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.2s;
 
-      &:hover {
-        opacity: 1;
-      }
+    &:hover {
+      background: #990000;
     }
   }
 `;
